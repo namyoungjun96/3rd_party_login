@@ -27,21 +27,43 @@
 ## Function
 - Login : auth of Naver, kakao, Facebook, Google and developed login api
 - Join : developed join form
-- Admin : manage login history and user list
+- Web : Login and join page.  Admin page (manage login history and user list)
+
+### Checking
+|No|Category|Decision|
+|------|---|---|
+|1|UserId| create a UserId after Joining|
+|2|developed login api| ? need planning (young part)|
+|3|fixing provider name |- NV : Naver <br>- KK : Kakao <br>- GG : Google <br>- FB : Facebook <br>- MA : Making Login API  <br>|
+|4|Log| Join and Login log<br> support? or not? |
+|-|||
 
 ## Architecture
+### Sequence Diagram
+![sequence_diagram](./Temp/sequenceDiagram.drawio.png)
+
+### FlowChart
+![Flowchart](./Temp/Flowchart.drawio.png)
+
 
 ### Sever
-- call login api and varify user's token 
+- call login api and varify user's provider token 
+- need class diagram
 
 ### Client (admin)
+- for mvc
+- login admin account > display DB (Simplification)
+
+
 
 ### DB
-AUTH info : access token, refresh token, userName, Password, join date, auth provider, login date
-IMAGE TBD
+- Redis : User info, Log db
+
+![ER_Diagram](./Temp/ER_diagram.drawio.png)
+
 
 ## Reference 
-Naver auth : https://developers.naver.com/docs/login/api/api.md
-kakao auth : https://developers.kakao.com/docs/latest/ko/kakaologin/common
-Facebook auth : https://developers.facebook.com/docs/facebook-login/overview
-Google auth : https://developers.google.com/identity/sign-in/web/sign-in
+Naver auth : https://developers.naver.com/docs/login/api/api.md <br />
+kakao auth : https://developers.kakao.com/docs/latest/ko/kakaologin/common <br />
+Facebook auth : https://developers.facebook.com/docs/facebook-login/overview <br />
+Google auth : https://developers.google.com/identity/sign-in/web/sign-in <br />
