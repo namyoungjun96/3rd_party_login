@@ -48,7 +48,6 @@
 
 ### Sever
 - call login api and varify user's provider token 
-- need class diagram
 ![class_Diagram](./Temp/ClassDiagram.drawio.png)
 
 ### Client (admin)
