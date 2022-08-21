@@ -47,7 +47,7 @@
 
 
 ### Sever
-- call login api and varify user's provider token 
+- call login api and varify user's provider token  
 ![class_Diagram](./Temp/ClassDiagram.drawio.png)
 
 ### Client (admin)
